@@ -47,9 +47,9 @@
 
 body {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  padding-bottom: 2rem;
   min-height: 100vh;
   min-height: 100dvh;
   font-family: "Figtree", sans-serif, arial, system-ui;
@@ -72,11 +72,11 @@ ul {
 
 article {
   display: grid;
-  gap: clamp(0.4rem, 3vw, 1.4rem);
+  gap: min(clamp(0.4rem, 3vw, 1.4rem), clamp(0.4rem, 2vh, 1.4rem));
   background-color: var(--color-card-background);
-  padding: 2rem;
+  padding: clamp(1.5rem, 5vmin, 2rem);
   margin-inline: auto;
-  width: clamp(15rem, 90vw, 25rem);
+  width: clamp(15rem, 90vw, 27rem);
   border: 2px solid var(--color-card-border);
   border-radius: 2rem;
   box-shadow: 1rem 1rem var(--color-card-border);
@@ -122,14 +122,21 @@ article .thumbnail {
   color: var(--color-text-highlight);
 }
 
-article > .author {
+.author:hover,
+.author:focus-visible,
+.attribution a:hover,
+.attribution a:focus-visible {
+  text-decoration: underline;
+}
+
+.author {
   display: flex;
   align-items: center;
   gap: 1rem;
   font-weight: var(--font-weight-bold);
 }
 
-article > .author > img {
+.author > img {
   width: 2.5rem;
   height: 2.5rem;
   aspect-ratio: 1 / 1;
@@ -137,9 +144,7 @@ article > .author > img {
 }
 
 footer {
-  position: fixed;
-  bottom: 0;
-  margin-inline: auto;
+  margin-top: 1.5rem;
   width: 100%;
   border: 2px solid var(--color-footer-border);
   background-color: var(--color-footer-background);
