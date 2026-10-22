@@ -46,9 +46,9 @@
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  justify-content: center;
   align-items: center;
   min-height: 100vh;
   min-height: 100dvh;
@@ -72,14 +72,14 @@ ul {
 
 article {
   display: grid;
-  gap: min(clamp(0.4rem, 3vw, 1.4rem), clamp(0.4rem, 2vh, 1.4rem));
+  gap: min(clamp(0.4rem, 3vw, 1rem), clamp(0.4rem, 2vh, 1rem));
   background-color: var(--color-card-background);
-  padding: clamp(1.5rem, 5vmin, 2rem);
+  padding: clamp(1rem, 5vmin, 1.4rem);
   margin-inline: auto;
-  width: clamp(15rem, 90vw, 27rem);
+  width: clamp(10rem, 90vw, 24rem);
   border: 2px solid var(--color-card-border);
   border-radius: 2rem;
-  box-shadow: 1rem 1rem var(--color-card-border);
+  box-shadow: 0.5rem 0.5rem var(--color-card-border);
 }
 
 article .thumbnail {
@@ -147,6 +147,8 @@ footer {
   margin-top: 1.5rem;
   width: 100%;
   border: 2px solid var(--color-footer-border);
+  border-radius: 0.4rem;
+  box-shadow: 0.3rem 0.2rem var(--color-footer-border);
   background-color: var(--color-footer-background);
 }
 
