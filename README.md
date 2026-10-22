@@ -17,7 +17,7 @@ Users should be able to:
 ### Links
 
 - Github repository URL: [https://github.com/Seviolune/blog-preview-card-main](https://github.com/Seviolune/blog-preview-card-main)
-- Solution URL: [not yet](https://www.frontendmentor.io/solutions/interactive-faq-accordion-with-no-javascript-because-its-possible-fqx4f3R14X)
+- Solution URL: [https://www.frontendmentor.io/challenges/blog-preview-card-ckPaj01IcS](https://www.frontendmentor.io/challenges/blog-preview-card-ckPaj01IcS)
 - Live Site URL: [https://seviolune.github.io/blog-preview-card-main](https://seviolune.github.io/blog-preview-card-main)
 
 ## Author
